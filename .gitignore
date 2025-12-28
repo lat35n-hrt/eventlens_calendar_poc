@@ -1,0 +1,31 @@
+# env
+.env
+
+# --- Python ---
+.venv/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Env / secrets ---
+.env
+
+# --- OS / Editor ---
+.DS_Store
+.vscode/
+.idea/
+
+# --- Local data / outputs ---
+data/eventlens.db
+data/outputs/
+*.log
+
+# --- Node / Playwright (later) ---
+playwright/node_modules/
+playwright/test-results/
+playwright/playwright-report/
+playwright/.cache/
