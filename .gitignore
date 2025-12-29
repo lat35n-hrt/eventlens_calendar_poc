@@ -29,3 +29,20 @@ playwright/node_modules/
 playwright/test-results/
 playwright/playwright-report/
 playwright/.cache/
+
+
+# --- Frontend (Vite/React/TS) ---
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/.cache/
+
+# Vite / npm logs
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/pnpm-debug.log*
+
+# --- Frontend env ---
+frontend/.env
+frontend/.env.*.local
