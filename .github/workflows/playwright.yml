@@ -42,3 +42,7 @@ jobs:
       - name: Start FastAPI server
         run: |
           uvicorn app.main:app --host 127.0.0.1 --port 8001 &
+
+      - name: Install Playwright browsers
+        working-directory: frontend
+        run: npx playwright install --with-deps
