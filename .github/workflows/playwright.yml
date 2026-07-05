@@ -38,3 +38,7 @@ jobs:
           mkdir -p data
           sqlite3 data/eventlens.db < app/db/schema.sql
           sqlite3 data/eventlens.db < data/seeds/seed.sql
+
+      - name: Start FastAPI server
+        run: |
+          uvicorn app.main:app --host 127.0.0.1 --port 8001 &
