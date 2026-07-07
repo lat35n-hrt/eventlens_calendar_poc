@@ -3,12 +3,12 @@ name: Playwright E2E(Docker)
 on:
   workflow_dispatch:
 
-container:
-  image: mcr.microsoft.com/playwright:v1.61.0-noble
-
 jobs:
   e2e:
     runs-on: ubuntu-latest
+
+    container:
+      image: mcr.microsoft.com/playwright:v1.61.0-noble
 
     steps:
       - name: Checkout source
